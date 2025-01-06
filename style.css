@@ -1,0 +1,500 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+html{
+    /* me permite deslizar cuando hago click en los links del menu*/
+    scroll-behavior: smooth;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #081b29;
+    padding: 32px;
+}
+
+.mi-logo{
+    position: relative;
+    right: 150px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.mi-logo p{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ededed;
+    padding-left: 5px;
+    padding-top: 3px;
+
+}
+.enlaces-container{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    width: 700px;
+    
+}
+.enlaces-container a{
+    text-decoration: none;
+    color: #ededed;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+.enlaces-container a:hover,
+.enlaces-container a.active{
+    color: #0ef;
+}
+
+.enlaces-container a:nth-child(6){
+    color: #ededed;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*Seccion 0*/
+.seccion1-container{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: content-box;
+    height: 700px;
+    padding-left: 200px;
+    background-color: #081b29;
+}
+.seccion-1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 50px;
+}
+.seccion-1 h1{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    color: #ededed;
+    padding-top: 60px;
+}
+.seccion-1 h2{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    color: #0ef;
+    padding-top: 5px;
+}
+.seccion-1 p{
+    padding-top: 20px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    color: #ededed;
+}
+
+.links-container  a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    color: #0ef;
+    background: transparent;
+    font-size: 40px;
+    margin: 20px 30px 15px 20px;
+    transition: .5s ease;
+    text-decoration: none;
+}
+
+.links-container a:hover{
+    background: #0ef;
+    color: #ededed;
+    box-shadow: 0 0 2px #0ef;
+}
+
+.button{
+    width: 150px;
+    display: inline-block;
+    padding: 10px 50px;
+    background: #0ef;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px #0ef;
+    font-size: 20px;
+    color: #081b29;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: .5s ease;
+    text-decoration: none;
+}
+
+.button:hover{
+    box-shadow: none;
+}
+
+.perfil-container{
+    position: relative;
+    right: 150px;
+    top: 30px;
+    width: 370px;
+    height: 370px;
+    box-sizing: border-box;
+}
+.perfil-container img{
+    box-sizing: border-box;
+    width: 368px;
+    height: 368px;
+    border-radius: 200px;
+}
+
+/*Seccion Sobre mi*/
+.seccion2-container{
+    display: flex;
+    background-color: #112e42;
+    width: 100%;
+    height: 500px;
+}
+
+.seccion-sobremi{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-top: 80px;
+}
+.seccion-sobremi h2{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #0ef;
+}
+.seccion-sobremi p{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: #ededed;
+    padding-top: 30px;
+    
+}
+
+/*Responsive*/
+@media (max-width: 1440px){ 
+    .seccion1-container{
+        display: flex;
+        justify-content: space-evenly;
+        box-sizing: content-box;
+        height: 800px;
+        padding-left: 100px;
+        background-color: #081b29;
+    }
+    .perfil-container{
+        right: 50px;   
+    }
+    .mi-logo{
+        right: 100px;
+    }
+    .mi-logo p{
+        padding-left: 60px;
+    }
+    .seccion2-container{
+        display: flex;
+        background-color: #112e42;
+        width: 100%;
+        height: 650px;
+    }
+    .seccion-sobremi{
+        padding-left: 180px;
+    }
+}
+
+@media (max-width: 768px){ 
+    .enlaces-container{
+        left: 30px; 
+    }
+    .mi-logo{
+        position: relative;
+        left: 5px;
+    }
+    .mi-logo p{
+        padding-left: 10px;
+    }
+    .seccion1-container{
+        height: 800px;
+        padding-left: 50px;
+        background-color: #081b29;
+    }
+    .seccion-1 h1{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 42px;
+        color: #ededed;
+        padding-top: 60px;
+    }
+    .seccion-1 p{
+        padding-top: 20px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        color: #ededed;
+    }
+    .perfil-container{
+        right: 20px;
+        top: 90px;
+    }
+    .perfil-container img{
+        width: 268px;
+        height: 268px;
+    }
+    .seccion2-container{
+        display: flex;
+        background-color: #112e42;
+        width: 100%;
+        height: 700px;
+    }
+    .seccion-sobremi{
+        padding-left: 50px;
+        padding-top: 40px;
+    }
+    .seccion-sobremi p{
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 414px){
+    nav{
+        display: flex;
+        background-color: #081b29;
+        padding: 15px;
+    }
+    .mi-logo{
+        position: absolute;
+        left: 10px;
+        display: grid;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+    .mi-logo p{
+        position: absolute;
+        left: 25px;
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        color: #ededed;
+        padding-left: 5px;
+        padding-top: 3px;
+    
+    }
+
+    .enlaces-container{
+        position: relative;
+        box-sizing: border-box;
+        width: 200px;
+        
+    }
+    .enlaces-container a{
+        text-decoration: none;
+        color: #464646;
+        font-weight: 500;
+        font-family: 'Raleway', sans-serif;
+        font-size: 10px;
+    }
+    .enlaces-container a:nth-child(1){
+        display: none;
+    }
+    .enlaces-container a:nth-child(2){
+        display: none;
+    }
+    .enlaces-container a:nth-child(3){
+        display: none;
+    }
+    .enlaces-container a:nth-child(4){
+        display: none;
+    }
+    .enlaces-container a:nth-child(5){
+        display: none;
+    }
+    .enlaces-container a:nth-child(6){
+        padding-left: 120px;
+        padding-top: 2px;
+    }
+
+    .perfil-container{
+        position: absolute;
+        left: 70px;
+        top: 70px;
+        width: 270px;
+        height: 270px;
+        box-sizing: border-box;
+    }
+    .perfil-container img{
+        box-sizing: border-box;
+        width: 268px;
+        height: 268px;
+        border-radius: 200px;
+    }
+
+    .seccion1-container{
+        height: 950px;
+        padding-left: 30px;
+        padding-right: 20px;
+        background-color: #081b29;
+    }
+    .seccion-1{
+        padding-top: 200px;   
+    }
+    .seccion-1 h1{
+        color: #ededed;
+        font-size: 25px;  
+    }
+    .seccion-1 h2{
+        font-size: 45px;  
+    }
+    .seccion-1 p{
+        color: #ededed;  
+    }
+    .seccion2-container{
+        display: flex;
+        background-color: #112e42;
+        width: 100%;
+        height: 910px;
+    }
+    .seccion2-container p{
+        font-size: 21px;
+    }
+    .seccion-sobremi{
+        padding-left: 30px;
+        padding-top: 40px;
+    }
+    .seccion-sobremi p{
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    nav{
+        display: flex;
+        background-color: #081b29;
+        padding: 15px;
+    }
+    .mi-logo{
+        position: absolute;
+        left: 10px;
+        display: grid;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+    .mi-logo p{
+        position: absolute;
+        left: 25px;
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        color: #ededed;
+        padding-left: 5px;
+        padding-top: 3px;
+    
+    }
+
+    .enlaces-container{
+        position: relative;
+        box-sizing: border-box;
+        width: 200px;
+        
+    }
+    .enlaces-container a{
+        text-decoration: none;
+        color: #464646;
+        font-weight: 500;
+        font-family: 'Raleway', sans-serif;
+        font-size: 10px;
+    }
+    .enlaces-container a:nth-child(1){
+        display: none;
+    }
+    .enlaces-container a:nth-child(2){
+        display: none;
+    }
+    .enlaces-container a:nth-child(3){
+        display: none;
+    }
+    .enlaces-container a:nth-child(4){
+        display: none;
+    }
+    .enlaces-container a:nth-child(5){
+        display: none;
+    }
+    .enlaces-container a:nth-child(6){
+        padding-left: 120px;
+        padding-top: 2px;
+    }
+
+    .perfil-container{
+        position: absolute;
+        left: 55px;
+        top: 70px;
+        width: 270px;
+        height: 270px;
+        box-sizing: border-box;
+    }
+    .perfil-container img{
+        box-sizing: border-box;
+        width: 268px;
+        height: 268px;
+        border-radius: 200px;
+    }
+
+    .seccion1-container{
+        height: 1000px;
+        padding-left: 30px;
+        padding-right: 20px;
+        background-color: #081b29;
+    }
+    .seccion-1{
+        padding-top: 200px;   
+    }
+
+    .seccion-1 h1{
+        font-size: 40px;
+        color: #ededed;
+    }
+
+    .seccion-1 h2{
+        font-size: 30px;
+        color: #0ef;
+    }
+
+    .seccion-1 p{
+        font-size: 20px;
+        color: #ededed;
+    }
+
+    .seccion2-container{
+        display: flex;
+        background-color: #112e42;
+        width: 100%;
+        height: 900px;
+    }
+    .seccion-sobremi{
+        padding-left: 30px;
+        padding-top: 40px;
+    }
+    .seccion-sobremi p{
+        padding-right: 30px;
+        font-size: 20px;
+    }
+}

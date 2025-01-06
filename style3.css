@@ -1,0 +1,126 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    background-color: #081b29;
+}
+
+.experience__section__title {
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #0ef;
+}
+
+.experiencie__box{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10rem 3rem;
+    gap: 1rem;
+}
+
+.experiencie__box:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+.experience__title{
+    font-size: 1.375rem;
+    font-weight:700;
+    line-height: 1.5rem;
+    padding-top: 1rem;
+    color: #F5F5F5;
+}
+
+.experience__text{
+    font-size:1rem;
+    font-weight: 500;
+    padding-top: 0.5rem;
+    color: #0ef;
+}
+
+.experiencia__botao--repo{
+    margin: 0.5rem;
+    border:1px solid;
+    border-color: #2A7AE4;
+    color: #112e42;
+    font-size: 1rem;
+    width: 116px;
+    height: 51px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px #0ef;  
+}
+
+.experiencia__botao--repo:hover{
+    box-shadow: none;
+}
+
+.experience__botao--demo{
+    margin: 0.5rem;
+    border:1px solid;
+    border-color: #2A7AE4;
+    background-color: #2A7AE4;
+    color: #F5F5F5;
+    font-size: 1rem;
+    width: 116px;
+    height: 51px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px #0ef;
+}
+
+.experience__botao--demo:hover{
+    box-shadow: none;
+}
+
+
+@media (max-width: 1440px){
+    .experiencie__box{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 5rem 1rem;
+        gap: 2rem;  
+        height: 350px;
+    }
+    .experience__img{
+        width: 60%;
+    }
+  }
+
+@media (max-width: 768px){
+    .experiencie__box{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 5rem 1rem;
+        gap: 2rem;  
+    }
+    .experience__img{
+        width: 60%;
+    }
+}
+
+@media (max-width: 414px){
+    .experience {
+        display: flex;
+        flex-direction: column;
+        background-color: #081b29;
+    }
+    .experiencie__box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .experiencie__box img{
+        width: 250px;
+    }
+    .experience__img{
+        width: 100%;
+    }
+    .experience__description{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
